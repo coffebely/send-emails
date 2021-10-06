@@ -3,8 +3,8 @@ import requests
 
 def get_logs(date_start, limit):
     return requests.get(
-        "https://api.mailgun.net/v3/sandbox9533174d59624751a515752235e0f2c3.mailgun.org/events",
-        auth=("api", "b4067df9b14b6b473a0865341d43fc82-443ec20e-0a52789b"),
+        "https://api.mailgun.net/v3/YOUR_DOMAIN/events",
+        auth=("api", "YOUR_API_KEY"),
         params={"begin": f"{date_start}",
                 "ascending": "yes",
                 "limit": f"{limit}",
