@@ -3,4 +3,3 @@ from .models import File, Person
 
 admin.site.register(File)
 admin.site.register(Person)
-# Register your models here.
